@@ -1,3 +1,5 @@
+Original Source: [The Quant's Playbook](https://quantgalore.substack.com/)
+
 This system stores the data in MySQL databases and the models in Colab notebooks. If you don’t have experience in setting these up, it is highly recommend visiting: 
 [Machine Learning for Sports Betting: MLB Edition](https://www.quantgalore.com/courses/ml-sports-betting-mlb "Machine Learning for Sports Betting: MLB Edition"),
 where we walk through the entire process with a similar workflow, going from data all the way to production.
