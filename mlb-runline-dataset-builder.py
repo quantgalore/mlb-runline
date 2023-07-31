@@ -194,6 +194,11 @@ Featured_Spread_DataFrame.index = pd.to_datetime(Featured_Spread_DataFrame.index
 
 # We initialize our sqlalchemy engine, then submit the data to the database
 
+initial_engine = sqlalchemy.create_engine('mysql+mysqlconnector://username:password@database-host-name:3306')
+
+with initial_engine.connect() as conn:
+    result = conn.execute(sqlalchemy.text('CREATE DATABASE desired_database_name'))
+
 engine = sqlalchemy.create_engine('mysql+mysqlconnector://username:password@database-host-name:3306/database-name')
 
 Featured_Spread_DataFrame.to_sql("baseball_spread", con = engine, if_exists = "append")
