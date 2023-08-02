@@ -156,7 +156,7 @@ Merged_DataFrame = pd.merge(Schedule_DataFrame, full_odds, on = ["game_datetime"
 Merged_DataFrame["team_1"] = Merged_DataFrame["team_1"].apply(name_converter)
 Merged_DataFrame["team_2"] = Merged_DataFrame["team_2"].apply(name_converter)
 
-Featured_Merged_DataFrame = Merged_DataFrame[["game_datetime","away_name","home_name", "team_1", "team_1_spread_odds", "team_2", "team_2_spread_odds", "venue_name", "winning_team"]].copy().set_index("game_datetime")
+Featured_Merged_DataFrame = Merged_DataFrame[["game_datetime","away_name","home_name", "team_1", "team_1_spread_odds", "team_2", "team_2_spread_odds", "venue_name"]].copy().set_index("game_datetime")
 
 # "team_1" always represents the favorite
 
